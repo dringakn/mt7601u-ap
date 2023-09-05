@@ -52,6 +52,25 @@ LINUX_VER = $(shell uname -r)
 LINUX_SRC ?= /lib/modules/$(LINUX_VER)/build
 LINUX_SRC_MODULE = /lib/modules/$(LINUX_VER)/kernel/drivers/net/wireless
 
+$(warning =============================================)
+$(warning WIFI_MODE=$(WIFI_MODE) for wifi driver)
+$(warning PLATFORM=$(PLATFORM) for wifi driver)
+$(warning TARGET=$(TARGET) for wifi driver)
+$(warning CHIPSET=$(CHIPSET) for wifi driver)
+$(warning MODULE=$(MODULE) for wifi driver)
+$(warning OSABL=$(OSABL) for wifi driver)
+$(warning RELEASE=$(RELEASE) for wifi driver)
+$(warning RT28xx_MODE=$(RT28xx_MODE) for wifi driver)
+$(warning RT28xx_DIR=$(RT28xx_DIR) for wifi driver)
+$(warning MAKE=$(MAKE) for wifi driver)
+$(warning LINUX_SRC=$(LINUX_SRC) for wifi driver)
+$(warning CROSS_COMPILE=$(CROSS_COMPILE) for wifi driver)
+$(warning CROSS_COMPILE_INCLUDE=$(CROSS_COMPILE_INCLUDE) for wifi driver)
+$(warning RTMP_SRC_DIR=$(RTMP_SRC_DIR) for wifi driver)
+$(warning LINUX_SRC_MODULE=$(LINUX_SRC_MODULE) for wifi driver)
+$(warning HAS_WOW_SUPPORT=$(HAS_WOW_SUPPORT) for wifi driver)
+$(warning =============================================)
+
 export OSABL RT28xx_DIR RT28xx_MODE LINUX_SRC CROSS_COMPILE CROSS_COMPILE_INCLUDE PLATFORM RELEASE CHIPSET MODULE RTMP_SRC_DIR LINUX_SRC_MODULE TARGET HAS_WOW_SUPPORT
 
 # The targets that may be used.
